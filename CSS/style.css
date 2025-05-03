@@ -1,126 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap');
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 
 body{
-    background-color: hsl(30, 18%, 87%);
+    background-color: hsl(30, 54%, 90%);
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    max-width: 100vw;
 }
 
+ img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+h1{
+    font-family: 'Young Serif';
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+p{
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    color: hsl(24, 5%, 18%);
+}
 
 .container{
-    width:350px;
-    background-color: hsl(0, 0%, 100%);
+    width: 375px;
+    border-radius: 15px;
+    background-color: white;
+    padding: 1em;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    border-radius: 15px;
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    padding: 20px;
-    box-sizing: border-box;
-    margin-bottom: 15px;
-    margin-top: 25px;
+    gap: 10px;
+    font-size: 0.8rem;
 }
 
-.container h1{
-    align-self: flex-start;
-    text-align: left;
-    font-family: "Young Serif", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 25px;
+.first_section{
+    background-color: hsl(330, 100%, 98%);
+    border-radius: 8px;
+    padding: 0.5em;
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
-.container p{
-    align-self: flex-start;
-    text-align: left;
-   margin-top: 10px;
-    font-size: 16px;
+.first_section li{
+    color: hsl(24, 5%, 18%);
 }
 
-.container article,.container ul{
-    align-self: flex-start; 
-    text-align: left; 
-    margin-top: 10px;
-    padding: 15px;
-    background-color:  hsl(330, 100%, 98%);
-    border-radius: 10px;
+.second_section{
+    color: hsl(24, 5%, 18%);
+    padding: 0.6em;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.75rem;
 }
 
-img{
-    border-radius: 20px;
-    width: 300px;
-    margin-top: 10px;
+
+/* Style for li elements */
+li {
+    color: brown; /* Set li color to brown */
+  }
+  
+  /* Ensure span text remains unaffected */
+  li span {
+    color: black; /* Inherit color from parent or reset to default */
+  }
+
+.third_section ol{
+    color: hsl(24, 5%, 18%);
+    padding: 0.4em;
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 0.75rem;
+    margin-top: 1em;
 }
 
-.container h4{
-    color: hsl(332, 51%, 32%);
-    font-family: "Young Serif", serif;
-    font-weight: 600;
+.third_section li{
+    margin-left: 1em;
 }
 
-.steps {
-    width: 100%;
-    max-width: 350px;
-    margin-top: 10px;
-    padding: 15px;
-    box-sizing: border-box;
-    margin-right: 40px;
+.fourth_section{
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em;
+    font-size: 0.75rem;
 }
 
-.steps h2{
- color: hsl(14, 45%, 36%);
- font-family: "Young Serif", serif;
- font-weight: 400;
-}
-
-.steps article,.steps ul{
-    align-self: flex-start;
-    text-align: left;
-    margin-right: 15px;
-    margin-bottom: 10px;
-    padding: 10px;
-    background-color: white;
-    border-radius: 10px;
-    padding-top: 10px;
-}
-
-.to-do{
-    width: 100%;
-    max-width: 350px;
-    margin-top: 20px;
-    padding: 10px;
-    box-sizing: border-box;
-    margin-right: 40px;
-}
-
-.to-do h2{
-    color: hsl(14, 45%, 36%);
- font-family: "Young Serif", serif;
- font-weight: 400;
-}
-
-.to-do article,.to-do ol{
-    align-self: flex-start;
-    text-align: left;
-    margin-right: 20px;
-    padding: 10px;
-    background-color: white;
-    border-radius: 10px;
-    padding-top: 10px;
-}
-
-.nutrition p{
+.fourth_section p{
     align-self: flex-start;
     text-align: left;
    margin-top: 10px;
@@ -131,3 +109,6 @@ table, th, td{
     width: 100%;
     border: 0;
 }
+
+
+
