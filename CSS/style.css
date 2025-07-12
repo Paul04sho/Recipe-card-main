@@ -137,41 +137,52 @@ table td {
     color: hsl(24, 5%, 18%);
 }
 
-/* Pour écrans medium (tablette) */
+/* 📱 Responsive design */
+/*Tablets*/
 @media (max-width: 768px) {
-  .container{
-    flex-direction: column;
-    padding: 10px;
+  .container {
+    width: 90%;
+    margin: 2rem auto;
+    padding: 1.5rem;
   }
-  .container img,
-  .prep-time{
+
+  table {
     width: 100%;
   }
 }
 
-/* Pour petits écrans (mobile) */
+/*Mobile phones*/
 @media (max-width: 480px) {
   body {
-    font-size: 16px;
-    margin: 10px;
+    padding: 1rem;
   }
-  .container{
-    padding: 5px;
+
+  .container {
+    width: 100%;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 0;
   }
-  .container img {
-    height: auto;
-  }
+
   h1 {
     font-size: 24px;
+    margin: 1rem 0;
   }
-  h2, h3 {
+
+  h2 {
     font-size: 20px;
   }
-  li {
-    margin-bottom: 8px;
+
+  p, li, td {
+    font-size: 14px;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  table td {
+    text-indent: 1rem;
+    padding: 0.6rem 0;
   }
 }
-    
-    
-    
-  
