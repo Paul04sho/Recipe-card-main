@@ -1,10 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Outfit:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap');
 
+*, *::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 
 body{
     background-color: hsl(30, 54%, 90%);
+    font-family: 'Outfit', sans-serif;
+    font-weight: 400;
+    
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
@@ -12,21 +21,45 @@ body{
 }
 
  img{
+    display: block;
     width: 100%;
-    border-radius: 10px;
+    border-radius: 0.5rem;
 }
 
 
 h1{
-    font-family: 'Young Serif';
-    font-weight: 500;
-    font-size: 1.1rem;
+    font-size: 30px;
+    margin: 2rem 0 1rem 0;
 }
 
-p{
-    font-family: 'Outfit', sans-serif;
+h1, h2 {
+    font-family: "Young Serif";
     font-weight: 400;
-    color: hsl(24, 5%, 18%);
+}
+
+h2:first-of-type {
+    padding-bottom: 0.6rem;
+}
+
+h2:not(:first-of-type) {
+    border-top: 1px solid lightgray;
+    margin: 1.5rem 0 0 0;
+    padding: 1.5rem 0 1rem 0;
+}
+
+h2, 
+li::marker,
+.measurements {
+    color: hsl(14, 45%, 36%);
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 1.5rem;
+}
+
+p, li, td {
+    color: hsl(30, 10%, 34%);
 }
 
 .container{
@@ -40,75 +73,68 @@ p{
     font-size: 0.8rem;
 }
 
-.first_section{
+ul, ol {
+    padding-left: 1.5rem;
+}
+
+ul li
+{
+    padding-left: 1rem;
+    line-height: 2rem;
+}
+
+ol li {
+    padding: 0 0 0.7rem 1rem;
+    line-height: 1.4rem;
+}
+
+li::marker {
+    font-weight: bold;
+}
+
+table {
+    table-layout: fixed;
+    width: 37rem;
+    border-collapse: collapse;
+}
+
+table td {
+    text-indent: 2.3rem;
+    border-bottom: 1px solid lightgray;
+    padding: 0.8rem 0 1rem 0;
+}
+
+.container {
+    width: 46rem;
+    /* height: 106.75rem; */
+    background-color: hsl(0, 0%, 100%);
+
+    margin: 7.7rem 22rem;
+    border-radius: 1.1rem;
+
+    padding: 2.5rem;
+}
+
+.prep-time {
     background-color: hsl(330, 100%, 98%);
-    border-radius: 8px;
-    padding: 0.5em;
-    font-family: 'Outfit', sans-serif;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
 }
 
-.first_section li{
+.prep-time h3 {
+    color: hsl(332, 51%, 32%);
+}
+
+/* .prep-time ul {
+    padding: 0.5rem 0 0 1.5rem;
+} */
+
+
+
+.bold {
+    font-weight: 700;
     color: hsl(24, 5%, 18%);
 }
-
-.second_section{
-    color: hsl(24, 5%, 18%);
-    padding: 0.6em;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    font-family: 'Outfit', sans-serif;
-    font-size: 0.75rem;
-}
-
-
-/* Style for li elements */
-li {
-    color: brown; /* Set li color to brown */
-  }
+    
   
-  /* Ensure span text remains unaffected */
-  li span {
-    color: black; /* Inherit color from parent or reset to default */
-  }
-
-.third_section ol{
-    color: hsl(24, 5%, 18%);
-    padding: 0.4em;
-    font-family: 'Outfit', sans-serif;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    font-size: 0.75rem;
-    margin-top: 1em;
-}
-
-.third_section li{
-    margin-left: 1em;
-}
-
-.fourth_section{
-    font-family: 'Outfit', sans-serif;
-    display: flex;
-    flex-direction: column;
-    padding: 0.5em;
-    font-size: 0.75rem;
-}
-
-.fourth_section p{
-    align-self: flex-start;
-    text-align: left;
-   margin-top: 10px;
-    font-size: 16px;
-}
-
-table, th, td{
-    width: 100%;
-    border: 0;
-}
-
-
-
