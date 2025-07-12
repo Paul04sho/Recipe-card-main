@@ -26,7 +26,6 @@ body{
     border-radius: 0.5rem;
 }
 
-
 h1{
     font-size: 30px;
     margin: 2rem 0 1rem 0;
@@ -127,9 +126,9 @@ table td {
     color: hsl(332, 51%, 32%);
 }
 
-/* .prep-time ul {
+.prep-time ul {
     padding: 0.5rem 0 0 1.5rem;
-} */
+}
 
 
 
@@ -137,5 +136,26 @@ table td {
     font-weight: 700;
     color: hsl(24, 5%, 18%);
 }
+
+@media screen and (max-width: 575px){
+
+    img{
+        max-width: 100%;
+    }
+    .container{
+        width: 80%
+        padding: 0.8125em;
+        font-size: 1.125rem;
+}
+
+    .prep-time{
+        padding: 0.9375em;
+    }
+
+    table{
+        width: 25rem;
+    }
+    
+    
     
   
