@@ -137,24 +137,40 @@ table td {
     color: hsl(24, 5%, 18%);
 }
 
-@media screen and (max-width: 575px){
-
-    img{
-        max-width: 100%;
-    }
-    .container{
-        width: 80%
-        padding: 0.8125em;
-        font-size: 1.125rem;
+/* Pour écrans medium (tablette) */
+@media (max-width: 768px) {
+  .container{
+    flex-direction: column;
+    padding: 10px;
+  }
+  .container img,
+  .prep-time{
+    width: 100%;
+  }
 }
 
-    .prep-time{
-        padding: 0.9375em;
-    }
-
-    table{
-        width: 25rem;
-    }
+/* Pour petits écrans (mobile) */
+@media (max-width: 480px) {
+  body {
+    font-size: 16px;
+    margin: 10px;
+  }
+  .container{
+    padding: 5px;
+  }
+  .container img {
+    height: auto;
+  }
+  h1 {
+    font-size: 24px;
+  }
+  h2, h3 {
+    font-size: 20px;
+  }
+  li {
+    margin-bottom: 8px;
+  }
+}
     
     
     
